@@ -1,0 +1,14 @@
+{
+  "title": "Lista kolorów",
+  "search": "Szukaj po ID",
+  "id": "ID",
+  "name": "Nazwa",
+  "year": "Rok",
+  "color": "Kolor",
+  "pantone_value": "Kolor Pantone",
+  "next": "Dalej",
+  "previous": "Wstecz",
+  "error": "Coś poszło nie tak",
+  "retry": "Spróbuj ponownie",
+  "inputError": "ID nie może być większe niż"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Colors List",
+  "search": "Search by ID",
+  "id": "ID",
+  "name": "Name",
+  "year": "Year",
+  "color": "Color",
+  "pantone_value": "Pantone Value",
+  "next": "Next",
+  "previous": "Previous",
+  "error": "Something went wrong. Please try again.",
+  "retry": "Retry",
+  "inputError": "ID cannot be bigger than"
+}
