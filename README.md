@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Paginated List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend aplication for regres API (https://reqres.in/api).
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React with Vite](https://vitejs.dev) - library for user interface
 
-## Expanding the ESLint configuration
+- [Tanstack Query](https://tanstack.com/query/latest) with [Axios](https://axios-http.com/docs/intro) - data fetching library
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [i18next](https://mui.com) - internalization library
 
-- Configure the top-level `parserOptions` property like this:
+- [MUI](https://mui.com) - components and styling library
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [x] Displaying paginated list of colors
+
+- [x] Searching by ID
+
+- [x] Changing language
+
+- [x] Pagination and filtering via URL see (https://rafalhadzicki.github.io/paginated-list/?page=2)
+
+- [x] Basic RWD
+
+## How to run
+
+### Project installation
+
+Run the terminal, open and install the project with `cd ProjectName` and `npm install`.
+
+### Run using node
+
+Simply run `npm start` and head to the URL given in the terminal
