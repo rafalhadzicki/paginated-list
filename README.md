@@ -20,7 +20,7 @@ A frontend aplication for regres API (https://reqres.in/api).
 
 - [x] Changing language
 
-- [x] Pagination and filtering via URL see (https://rafalhadzicki.github.io/paginated-list/?page=2)
+- [x] Pagination and filtering via URL, see (https://rafalhadzicki.github.io/paginated-list/?page=2)
 
 - [x] Basic RWD
 
