@@ -2,6 +2,10 @@
 
 A frontend aplication for regres API (https://reqres.in/api).
 
+## Live demo
+
+https://rafalhadzicki.github.io/paginated-list/
+
 ## Stack
 
 - [React with Vite](https://vitejs.dev) - library for user interface
