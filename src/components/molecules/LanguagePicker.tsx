@@ -13,6 +13,7 @@ import { languages } from '../../constants/languages';
 const LanguagePicker = () => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+
   const handleChangeLanguage = (event: SelectChangeEvent) => {
     i18n.changeLanguage(event.target.value);
     setSelectedLanguage(event.target.value);

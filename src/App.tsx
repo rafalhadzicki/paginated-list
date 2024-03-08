@@ -25,7 +25,11 @@ function App() {
   const { t } = useTranslation();
 
   const {
-    getProductsResponse: { data, total, total_pages: totalPages } = {},
+    getProductsResponse: {
+      data: products,
+      total,
+      total_pages: totalPages,
+    } = {},
     isProductsFetching,
     isProductsError,
     refetchProducts,
@@ -33,6 +37,12 @@ function App() {
 
   const { productById, isProductFetching, isProductError, refetchProduct } =
     useGetProductById(parseInt(searchPhrase));
+
+  const isNavigationDisabled =
+    !!searchPhrase ||
+    isProductsFetching ||
+    isProductFetching ||
+    !products?.length;
 
   const handleSearchChange = (
     e: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
@@ -76,7 +86,7 @@ function App() {
       />
       <ProductsTable
         search={searchPhrase}
-        products={data}
+        products={products}
         productById={productById}
         isLoading={isProductsFetching || isProductFetching}
         isError={isProductsError || isProductError}
@@ -88,7 +98,7 @@ function App() {
         currentPage={currentPage}
         totalPages={totalPages}
         onNavigationClick={handleNavigation}
-        disabled={!!searchPhrase || isProductsFetching || isProductFetching}
+        disabled={isNavigationDisabled}
       />
     </StyledCard>
   );

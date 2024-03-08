@@ -61,6 +61,9 @@ const ProductsTable = ({
 
 const TableContainer = styled(Box)({
   minHeight: 322,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
 });
 
 const StyledTable = styled(Table)({

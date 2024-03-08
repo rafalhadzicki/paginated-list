@@ -18,11 +18,11 @@ const NavigationBar = ({
   const { t } = useTranslation();
 
   const handleDisabled = (direction: NavDirection) => {
-    if (disabled) return true;
-    if (direction === NavDirection.Next && currentPage === totalPages)
-      return true;
-    if (direction === NavDirection.Previous && currentPage === 1) return true;
-    return false;
+    return (
+      disabled ||
+      (direction === NavDirection.Next && currentPage === totalPages) ||
+      (direction === NavDirection.Previous && currentPage === 1)
+    );
   };
   return (
     <ButtonsContainer>

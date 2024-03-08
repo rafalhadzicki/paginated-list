@@ -40,7 +40,7 @@ export const useGetProductById = (id?: number) => {
     isFetching: isProductFetching,
     isError: isProductError,
     refetch: refetchProduct,
-  } = useQuery<Product | undefined, AxiosError>({
+  } = useQuery<Product, AxiosError>({
     queryKey: [QueryKeys.Product, id],
     queryFn: async () => {
       const response = await apiClient.get<GetProductResponse>(
@@ -49,7 +49,6 @@ export const useGetProductById = (id?: number) => {
       return response.data;
     },
     enabled: !!id,
-    placeholderData: keepPreviousData,
   });
   return { productById, isProductFetching, isProductError, refetchProduct };
 };
